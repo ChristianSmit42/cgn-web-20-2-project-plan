@@ -19,7 +19,7 @@ function App() {
     return (
         <div className={"app"}>
             <Button variant="outlined" color="primary" onClick={() => setShowAddDialog(true)}>
-                Add Idea
+                Add awesome Idea
             </Button>
 
             <AddIdeaDialog open={showAddDialog}
