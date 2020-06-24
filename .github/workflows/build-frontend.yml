@@ -12,5 +12,5 @@ jobs:
       - name: Install
         run: |
           cd frontend
-          yarn --no-progress --non-interactive --no-lockfile
-          yarn build
+          npm install
+          npm run build
