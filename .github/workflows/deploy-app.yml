@@ -63,7 +63,7 @@ jobs:
           path: project-planning/target
       - name: login to heroku
         env:
-          HEROKU_API_KEY: ${{ secret.HEROKU_API_KEY }}
+          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
         run: heroku container:login
       - name: heroku build/push container
         env:
