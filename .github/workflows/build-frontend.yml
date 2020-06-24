@@ -9,8 +9,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
-        - name: Install
-        run: |
-          cd frontend
-          yarn --no-progress --non-interactive --no-lockfile
-          yarn build
+      - name: Install
+      run: |
+        cd frontend
+        yarn --no-progress --non-interactive --no-lockfile
+        yarn build
