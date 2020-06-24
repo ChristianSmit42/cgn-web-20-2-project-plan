@@ -9,7 +9,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
-      - name: Install
+
+      - name: Use Node.js 14.x
+          uses: actions/setup-node@v1
+          with:
+            node-version: 14.x
+      - name: run npm install and build
         run: |
           cd frontend
           npm install
